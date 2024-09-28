@@ -1,0 +1,182 @@
+/* Global Styles */
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  /* Navigation Bar */
+  
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    margin: 3px;
+    padding: 10px;
+    color: white;
+  }
+  h2{
+    display: none;
+  }
+  h2:hover{
+    cursor:pointer;
+    
+  }
+  
+  #contact-btn {
+    background-color: aliceblue;
+    border: none;
+    color: black;
+    padding: 7px;
+    border-radius: 5px;
+  }
+  
+  /* Links and Headings */
+  
+  a {
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  
+  h1 {
+    color: coral;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: coral;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #contact-btn:hover {
+    background-color: coral;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Containers */
+  
+  .container1 {
+    width: 50vw;
+    padding: 20px;
+    padding-top: 100px;
+  }
+  
+  .container2 {
+    width: 50vw;
+  }
+  
+  /* Paragraphs and Buttons */
+  
+  p {
+    margin-top: 15px;
+  }
+  
+  .hire-me {
+    margin: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: coral;
+  }
+  
+  .cv {
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: coral;
+  }
+  
+  .cv:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: aliceblue;
+  }
+  
+  .hire-me:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: aliceblue;
+  }
+  
+  /* Images */
+  
+  img {
+    width: 70%;
+    height: 80%;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  
+  /* Main Layout */
+  
+  #main {
+    display: flex;
+  }
+  
+  /* Responsive Design */
+  
+  /* For screens smaller than 768px (tablets and mobiles) */
+  @media only screen and (max-width: 768px) {
+    .container1, .container2 {
+      width: 90vw;
+    }
+    img {
+      width: 90%;
+      height: 90%;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+  }
+  
+  /* For screens smaller than 760px (smaller tablets) */
+  @media only screen and (max-width: 760px) {
+    img {
+      width: 80%;
+      height: 70%;
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+  }
+  
+  /* For screens smaller than 480px (mobiles) */
+  @media only screen and (max-width: 480px) {
+    .container1, .container2 {
+      width: 100vw;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      margin-left: 0;
+      margin-top: 0;
+    }
+    a{
+        display: none;
+    }
+    
+    h2{
+        
+        display: block;
+      }
+    
+    p {
+      margin-top: 10px;
+    }
+    .hire-me, .cv {
+      margin: 10px;
+    }
+    #main {
+      flex-direction: column;
+    }
+    img {
+      order: 2;
+    }
+    .container1, .container2 {
+      order: 1;
+    }
+  }
